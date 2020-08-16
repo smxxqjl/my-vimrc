@@ -1,9 +1,6 @@
 " my little config
 set number
 
-" enable pathogen
-execute pathogen#infect()
-
 " Uncomment the following to have Vim jump to the last position when                                                       
 " reopening a file
 if has("autocmd")
@@ -25,6 +22,10 @@ call plug#end()
 
 set expandtab
 
+" Make * key not jump to next
 nnoremap * *``
+
 let mapleader = " "
+
+" Coq settings
 hi default CoqtailChecked ctermbg=150 guibg=Grey
